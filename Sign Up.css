@@ -1,0 +1,36 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+#outerbox{
+    padding: 20px;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#innerbox{
+    display: flex;
+    width: 20px;
+    width: 60%;
+    height: 500px;
+
+}
+
+#left_ib{
+    background-color: #2874F0;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+#right_ib{
+
+}
+
+
+
