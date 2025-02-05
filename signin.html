@@ -13,31 +13,27 @@
  <d id="outerbox">
     <di id="innerbox">
         <div class="left_ib">
-            <h2>Looks like you're new here! </h2></br></br>
-            <p style="color: #A7D3DB;">sign up with your Name and Mobile number to get started</p>
+            <h2>Login </h2></br></br>
+            <p style="color: #A7D3DB;">Get access to your Orders, Wishlist and Recommendations</p>
             <div style="display: flex;flex-direction: column;align-items: center;justify-content: center;margin-top: 30px;width: 75%;">
                 <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png" alt="hero_signup">
                </div>
         </div>
-        <div class="right_ib">
-            <input id="name" type="text" placeholder="Enter UserName"/></br></br>
-            <input id="number" type="number" placeholder="Enter Mobile number"/></br></br>
-            <input id="password" type="password" placeholder="Enter password"/></br></br></br>
+        <DIV class="right_ib">
+            <input type="text" placeholder="Enter Email/Mobile number"/></br></br>
+            <input type="password" placeholder="Enter password"/></br></br></br>
             <p style="color: #AAA9AA;">By continuing,you agree to Flipkart's <a style="color: #7BA2F2;"   href="https://www.flipkart.com/pages/terms">Terms of Use</a> and <a style="color: #7BA2F2;" href="https://www.flipkart.com/pages/privacypolicy" >Privacy Policy</a></p></br>
-            <button onclick="sign()" id="bt1"><b>CONTINUE</b></button></br></br>
-            <button onclick="window.location.href='signin.html'" id="bt2"><b>Existing User?   Log in</b></button></br></br>
-
+            <button id="bt1" onclick="Signin()"><b>LOGIN</b></button></br></br>
+                <button onclick="window.location.href='Sign Up.html'" id="bt2"><b>Not Existing User? Signup</b></button>
+            </div> 
+        </div>
         </div>
     </div>
  </div>
-
-
-
 </body>
 <script>
     $(function(){
     $("#container").load("./navbar.html");
     }); 
 </script>
-<script src="signup.js"></script>
 </html>
