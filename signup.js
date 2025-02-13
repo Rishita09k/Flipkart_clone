@@ -1,4 +1,7 @@
-function sign(){
+let getUserdata = JSON.parse(localStorage.getItem("usersdata")) || [];
+console.log(getUserdata);
+
+function Signup(){
     let username=document.getElementById("name").value;
     let mobile=document.getElementById("number").value;
     let password=document.getElementById("password").value;
@@ -18,8 +21,11 @@ function sign(){
         password:password
     }
 
-    console.log(userData);
+    let users = [...getUserdata,userData];
+    localStorage.setItem("usersdata", JSON.stringify(users));
 
+    alert("Signup Successfull");
+    window.location.href="signin.html"
     }
 
 }
