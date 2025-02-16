@@ -1,5 +1,5 @@
-let getUserdata = JSON.parse(localStorage.getItem("usersdata")) || [];
-console.log(getUserdata);
+let getUsersdata = JSON.parse(localStorage.getItem("usersdata")) || [];
+console.log(getUsersdata);
 
 function Signup(){
     let username=document.getElementById("name").value;
@@ -15,13 +15,13 @@ function Signup(){
     }
     else{
         
-    let userData={
+    let usersData={
         username:username,
         mobile:mobile,
         password:password
     }
 
-    let users = [...getUserdata,userData];
+    let users = [...getUsersdata,usersData];
     localStorage.setItem("usersdata", JSON.stringify(users));
 
     alert("Signup Successfull");

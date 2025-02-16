@@ -39,3 +39,21 @@ input{
     flex-direction: column;
     align-items: center;
 }
+
+li{
+    list-style: none;
+    font-size: 14px
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    padding-bottom: 18px;
+    padding-top: 18px;
+}
+
+.heading{
+    color: gray;
+}
